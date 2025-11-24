@@ -231,26 +231,95 @@ public class OOPS{
     }
 }*/
 
-import java.util.*;
-import bank.*;
-class Shape{
-    public void area(){
-        System.out.println("Display area of shape");
-    }
-}
-class Triangle extends Shape{
-    public void area(int h,int b){
-        System.out.println(0.5*b*h);
-    }
-}
-class Circle extends Shape{
-    public void area(int r){
-        System.out.println(3.14*r*r);
-    }
+// code for types of access modifiers
+
+/*package bank;
+class Account{
+    public String name;     // code for showing public modifier
+    String name;             // code for showing default modifier
+    protected String email;  // code for showing protected modifier 
+   private String password;  // code for showing private modifier 
+
+
+   public void setPassword(String password) {
+       this.password = password;
+   }
+
 }
 public class OOPS{
-    public static void main(String[] args) {
-       bank.Account account1=new bank.Account();
-       account1.name="customer1";
+    public static void main(String[]args){
+        Account account1 = new Account();
+        a1.name = "Apna College";
+       a1.setPassword("abcd");
+       a1.email = "hello@apnacollege.com";
+    }
+}*/
+
+// code for abstraction 
+
+/*abstract class Animal{
+    abstract void walk();
+    void breathe(){
+        System.out.println("The animal is breathing air");
+    }
+    Animal(){
+        System.out.println("You are about to create an animal");
     }
 }
+class Horse extends Animal{
+    Horse(){
+        System.out.println("Created animal is horse");
+    }
+    void walk(){
+        System.out.println("Walk on four legs");
+    }
+}
+public class OOPS {
+    public static void main(String[]args){
+        Horse h1=new Horse();
+        h1.walk();
+        h1.breathe();
+    }   
+}*/
+
+// code for interfaces 
+
+/*interface Animal{
+    void walk();
+}
+class Horse implements Animal{
+    public void walk(){
+        System.out.println("Horse is walking on four legs");
+    }
+}
+public interface OOPS {
+    public static void main(String[]args){
+        Horse h1=new Horse();
+        h1.walk();
+    }  
+}*/
+
+// code for explaining static keyword
+
+/*class Student {
+   static String school;
+   String name;   
+}
+
+
+public class OOPS {
+   public static void main(String args[]) {
+       Student.school = "JMV";
+       Student s1 = new Student();
+       Student s2 = new Student();
+
+
+       s1.name = "Meena";
+       s2.name = "Beena";
+
+
+       System.out.println(s1.school);
+       System.out.println(s2.school);
+   }
+}*/
+
