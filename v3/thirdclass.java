@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 /*public class thirdclass {                             // code for printing adult not adult using if else
