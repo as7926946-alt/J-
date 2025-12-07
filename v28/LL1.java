@@ -157,4 +157,85 @@ public class LL1 {
     }
 }*/
 
+// code for swaping nodes in pair
+
+/*class LinkedList {
+    Node head;
+
+    class Node {
+        int data;
+        Node next;
+        Node(int d) { data = d; next = null; } 
+    }
+
+    void insert(int d) {
+        Node n = new Node(d);
+        if (head == null) {
+            head = n;
+            return;
+        }
+        Node curr = head;
+        while (curr.next != null) curr = curr.next;
+        curr.next = n;
+    }
+
+    void swapPairs() {
+        if (head == null || head.next == null) return;
+
+        Node temp = null;       // previous node of pair
+        Node first = head;      // first node of current pair
+        Node p = head.next;     // second node of current pair
+
+        head = p;               // new head after first swap
+
+        while(first != null && p != null) {
+            Node ttemp = p.next; // backup next node
+
+            p.next = first;      // swap
+            first.next = ttemp;
+
+            if(temp != null) temp.next = p; // connect previous pair
+
+            // move pointers for next pair
+            temp = first;
+            first = first.next;
+            if (first != null)
+    p = first.next;
+else
+    p = null;
+
+        }
+    }
+
+    void printList() {
+        Node n = head;
+        while(n != null) {
+            System.out.print(n.data + " ");
+            n = n.next;
+        }
+        System.out.println();
+    }
+}
+public class LL1 {
+    public static void main(String[] args) {
+        LinkedList list = new LinkedList();
+        list.insert(10);
+        list.insert(20);
+        list.insert(30);
+        list.insert(40);
+        list.insert(50);
+        list.insert(60);
+
+        System.out.println("Before swap:");
+        list.printList();
+
+        list.swapPairs();
+
+        System.out.println("After swap:");
+        list.printList();
+    }
+}*/
+
+
+
 
